@@ -97,6 +97,7 @@ const userSchema = new mongoose.Schema({
     userType: {
         type: String,
         enum: ['individual', 'organization', 'admin'],
+        default: 'individual',
         required: false,
       },
     
